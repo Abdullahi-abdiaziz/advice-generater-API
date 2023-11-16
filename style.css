@@ -35,7 +35,6 @@ img {
   position: relative;
   max-width: 350px;
   padding: 2rem;
-  /* border: 1px solid; */
   border-radius: 1rem;
   background-color: var(--body-bg);
   color: var(--text-clr);
@@ -43,7 +42,6 @@ img {
 
 .advice-content {
   text-align: center;
-  /* font-size: 2rem; */
 }
 
 .advice-id {
@@ -55,7 +53,7 @@ img {
 }
 
 #advice {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 3rem;
 }
@@ -78,4 +76,14 @@ img {
   background-color: var(--btn-bg);
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 769px){
+  .advice-container {
+    max-width: 450px;
+  }
+
+  #advice {
+  font-size: 3rem;
+}
 }

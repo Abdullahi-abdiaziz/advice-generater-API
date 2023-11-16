@@ -12,7 +12,6 @@ async function getAdvice() {
     const data = await response.json();
     advice.innerHTML = `"${data.slip.advice}"`;
     adviceID.innerHTML = `ADVICE #${data.slip.id}`;
-    console.log(data);
   } catch (error) {
     console.error("Error fetching advice:", error);
     advice.innerHTML = "Error fetching advice. Please try again.";
