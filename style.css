@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  --body-bg: hsl(217, 19%, 24%);
+  --advice-bg: hsl(217, 19%, 38%);
+  --text-clr: hsl(193, 38%, 86%);
+  --btn-bg: hsl(150, 100%, 66%);
+  --other: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--other);
+  font-family: "Manrope", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.advice-container {
+  position: relative;
+  max-width: 350px;
+  padding: 2rem;
+  /* border: 1px solid; */
+  border-radius: 1rem;
+  background-color: var(--body-bg);
+  color: var(--text-clr);
+}
+
+.advice-content {
+  text-align: center;
+  /* font-size: 2rem; */
+}
+
+.advice-id {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: var(--btn-bg);
+  letter-spacing: 3px;
+}
+
+#advice {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.devider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+#generateAdvice {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-bg);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
