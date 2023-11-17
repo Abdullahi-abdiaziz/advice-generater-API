@@ -6,6 +6,7 @@ adviceGenerator.addEventListener("click", getAdvice);
 
 async function getAdvice() {
   advice.innerHTML = "Loading...";
+  adviceID.innerHTML = "Calculating"
 
   try {
     const response = await fetch("https://api.adviceslip.com/advice");
